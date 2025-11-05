@@ -1,0 +1,9 @@
+.button
+{
+    display: inline-block;
+    border: 2px solid;
+    border-color: black;
+    text-decoration: none;
+    padding: 4px;
+    background-color:whitesmoke;
+}
