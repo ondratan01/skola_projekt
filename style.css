@@ -12,7 +12,7 @@
 #sipka
 {
     width: 150px;
-    margin-left: 9%;
+    margin-left: 250px;
 }
 .button
 {
@@ -23,6 +23,7 @@
     padding: 4px;
     background-color:whitesmoke;
     margin-left: 10%;
+    font-size: 25px;
 }
 .boxik
 {
@@ -40,4 +41,14 @@
     width: 400px;
     height: 400px;
     transform: rotate(270deg);
+}
+#hlasovat
+{
+    margin-left: 10%;
+    padding: 3px;
+    padding-right: 4px;
+    margin-bottom: 10%;
+    font-size: 25px;
+    
+    
 }

@@ -6,6 +6,7 @@
     <title>Anketa - Hlasování</title>
 </head>
 <link rel="stylesheet" href="style.css">
+
 <body style="background-color: lightgray;">
     <div class="sipkanadpis">
         <img src="https://wallpapers.com/images/high/curved-red-arrow-pointing-downward-gdwa8jta9qkcwmlf-2.png" alt="Arrow With Funny Eyes Pointing Right Clipart - Funny Arrow @clipartmax.com" id="sipka">
@@ -16,12 +17,16 @@
 
 
     <form class="formularik">
-        <label><input type="radio" name="vote">Ano</label><br>
-        <label><input type="radio" name="vote">Ne</label><br>
-        <label><input type="radio" name="vote">Tady je jídelna?</label><br><br>
-        <a href="results.html" class="button">Odeslat hlas</a>
+        <label><input type="radio" name="vote" value="Ano">Ano</label><br>
+        <label><input type="radio" name="vote" value="Ne">Ne</label><br>
+        <label><input type="radio" name="vote" value="Tady">Tady je jídelna?</label><br><br>
+        <button type="button" id="hlasovat">Hlasovat</button>
+        <a href="results.html" class="button">Výsledky</a>
     </form>
 
     </div>
+
+
+    <script src="script.js"> </script>
 </body>
 </html>
