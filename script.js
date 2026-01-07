@@ -1,11 +1,11 @@
-document.getElementById("hlasovat").onclick = function()
-{
-    //event.preventDefault();
-    let odpoved = document.querySelector('input[name="vote"]:checked');
-  //  console.log(odpoved);
-  if (odpoved)
- {
-    let vybrana = odpoved.value;
-    console.log(vybrana);
- }
-}
+const starttlacitko = document.getElementById("starttlacitko");
+const hero = document.querySelector(".hero");
+const poll = document.querySelector(".poll");
+
+const welcome = document.querySelector(".welcome");
+
+starttlacitko.addEventListener("click", () => {
+  welcome.classList.add("hide");
+  poll.classList.add("show");
+});
+

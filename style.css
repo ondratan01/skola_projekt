@@ -1,54 +1,77 @@
-.header1
-{
-    text-align: center;
-    font-size: 45px;
-}
-.sipkanadpis
-{
-    display: flex;
-    gap: 18%;
-    margin-bottom: 2%;
-}
-#sipka
-{
-    width: 150px;
-    margin-left: 250px;
-}
-.button
-{
-    display: inline-block;
-    border: 2px solid;
-    border-color: black;
-    text-decoration: none;
-    padding: 4px;
-    background-color:whitesmoke;
-    margin-left: 10%;
-    font-size: 25px;
-}
-.boxik
-{
-    font-size: larger;
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-.formularik
-{
-    padding: 10px;  
-}
-#pizza
-{
-    width: 400px;
-    height: 400px;
-    transform: rotate(270deg);
-}
-#hlasovat
-{
-    margin-left: 10%;
-    padding: 3px;
-    padding-right: 4px;
-    margin-bottom: 10%;
-    font-size: 25px;
+.hero {
     
-    
+  height: 100vh;
+  background: url("https://i.ytimg.com/vi/gaJJQI0143s/maxresdefault.jpg") center / cover ;
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.hero.hide {
+  opacity: 0;
+  transform: translateY(-50px);
+  pointer-events: none;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#starttlacitko
+{
+    width: 15%; 
+    margin-top: 1%;
+    margin-left: 42.5%; 
+    border-radius: 45%; 
+    height: 5%; 
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bolder;
+    font-size: 111%;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 5px;
+}
+#starttlacitko:hover 
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.25s;
+}
+
+.welcome {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.welcome.hide {
+  opacity: 0;
+  transform: translateY(-30px);
+  pointer-events: none;
+}
+
+.poll {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.poll.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
 }

@@ -7,24 +7,35 @@
 </head>
 <link rel="stylesheet" href="style.css">
 
-<body style="background-color: lightgray;">
-    <div class="sipkanadpis">
-        <img src="https://wallpapers.com/images/high/curved-red-arrow-pointing-downward-gdwa8jta9qkcwmlf-2.png" alt="Arrow With Funny Eyes Pointing Right Clipart - Funny Arrow @clipartmax.com" id="sipka">
-    <h1 class="header1">Chceme levnější obědy?</h1>
-    </div>
-<div class="boxik">
-<img src="https://i.redd.it/ar62wc4htqc01.jpg" alt="neco je spatne" id="pizza">
+<body >
+    
+    <section class="hero">
+        <div class="welcome active">
+  <h1 style="font-size: 300%">Jak jste spokojeni se školou?</h1>
+  <p>
+    Pomoz nám zjistit názor studentů na tvoji školu.
+  </p>
+  <span class="scroll">↓ Scrolluj ↓</span>
+  </div>
+  
+  <button id="starttlacitko" >Pokračovat</button>
+
+  <div class="poll hidden">
+  <h2>Hlasování</h2>
+
+  <form>
+    <label><input type="radio" name="vote"> Ano</label>
+    <label><input type="radio" name="vote"> Ne</label>
+    <label><input type="radio" name="vote"> Je mi to jedno</label>
+
+    <button type="submit">Hlasovat</button>
+  </form>
+</div>
 
 
-    <form class="formularik">
-        <label><input type="radio" name="vote" value="Ano">Ano</label><br>
-        <label><input type="radio" name="vote" value="Ne">Ne</label><br>
-        <label><input type="radio" name="vote" value="Tady">Tady je jídelna?</label><br><br>
-        <button type="button" id="hlasovat">Hlasovat</button>
-        <a href="results.html" class="button">Výsledky</a>
-    </form>
+</section>
 
-    </div>
+
 
 
     <script src="script.js"> </script>
