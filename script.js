@@ -19,6 +19,10 @@ vote1.addEventListener("click", () => {
 vote2.addEventListener("click", () => {
   otazka3.classList.add("show");
 })
+/*
+Kdyz das odeslat a nebude tam nic, tak to da error box, ze mas checknout ty radia.
+*/
+
 
 /*
 Komunikace učitelů
