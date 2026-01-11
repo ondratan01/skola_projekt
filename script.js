@@ -3,6 +3,8 @@ const hero = document.querySelector(".hero");
 const poll = document.querySelector(".poll");
 const bg = document.querySelector(".bg");
 const welcome = document.querySelector(".welcome");
+const otazka2 = document.querySelector(".otazka2");
+const otazka3 = document.querySelector(".otazka3");
 
 starttlacitko.addEventListener("click", () => {
   welcome.classList.add("hide");
@@ -10,4 +12,11 @@ starttlacitko.addEventListener("click", () => {
   poll.classList.add("show");
   bg.classList.add("blur");
 });
+
+vote1.addEventListener("click", () => {
+  otazka2.classList.add("show");
+})
+vote2.addEventListener("click", () => {
+  otazka3.classList.add("show");
+})
 

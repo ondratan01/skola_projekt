@@ -86,7 +86,7 @@ html, body {
   text-shadow:-1px -1px 0 black;
   font-weight: bold;
   top: 20px;
-  left: 20%;
+  left: 15%;
   transform: translateX(-50%) translateY(80px);
   opacity: 0;
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -107,3 +107,48 @@ transition: opacity 0.5s ease, transform 0.5s ease;
 pointer-events: none;
 }
 
+.otazka2
+ {
+  position: absolute;
+  color: whitesmoke;
+  text-shadow:-1px -1px 0 black;
+  font-weight: bold;
+  top: 30%;
+  left: 15%;
+transform: translateX(-50%) translateY(80px);
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.otazka2 label {
+  display: block;
+  margin-bottom: 8px;
+}
+.otazka2.show 
+{
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.otazka3
+ {
+   pointer-events: auto;
+  position: absolute;
+  color: whitesmoke;
+  text-shadow:-1px -1px 0 black;
+  font-weight: bold;
+  top: 55%;
+  left: 8%;
+transform: translateY(80px);
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.otazka3 label {
+  display: block;
+  margin-bottom: 8px;
+  
+}
+.otazka3.show 
+{
+  transform: translateY(0);
+  opacity: 1;
+}
