@@ -20,3 +20,30 @@ vote2.addEventListener("click", () => {
   otazka3.classList.add("show");
 })
 
+/*
+Komunikace učitelů
+
+Jak hodnotíte přístup učitelů ke studentům?
+
+
+Velmi dobrý
+
+Spíše dobrý
+
+Spíše špatný
+
+Velmi špatný
+
+Doporučení
+
+Doporučili byste tuto školu ostatním?
+
+
+Ano
+
+Spíše ano
+
+Spíše ne
+
+Ne
+*/

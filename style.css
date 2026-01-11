@@ -94,6 +94,7 @@ html, body {
 .poll label {
   display: block;
   margin-bottom: 8px;
+  
 }
 .poll.show 
 {
