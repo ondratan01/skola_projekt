@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    
+<section id="intro" class="page">
+  <h1>Anketa Creator</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Vytvořit anketu</h2>
+      <p>Navrhni vlastní otázky</p>
+      <button onclick="showPage('creator')">Začít</button>
+    </div>
+
+    <div class="card">
+      <h2>Hlasovat</h2>
+      <p>Zapoj se do ankety</p>
+      <button onclick="showPage('vote')">Hlasovat</button>
+    </div>
+  </div>
+</section>
+
+<select class="question-type">
+  <option value="single">Jedna odpověď</option>
+  <option value="multiple">Více odpovědí</option>
+  <option value="text">Textová odpověď</option>
+</select>
+
+<a href="#" class="button">
+  <span>Klikni sem <br>cau lidi</span>
+  
+  <img src="https://www.gravatar.com/avatar/2cbc9e8bf7ba6e2df07bfa485a0d4464?s=140&d=retro" alt="ikona">
+  
+</a>
+
+
+
+<script src="index-script.js"></script>
+</body>
+</html>
