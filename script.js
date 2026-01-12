@@ -1,10 +1,11 @@
 const starttlacitko = document.getElementById("starttlacitko");
-const hero = document.querySelector(".hero");
+const prvni = document.querySelector(".prvni");
 const poll = document.querySelector(".poll");
 const bg = document.querySelector(".bg");
 const welcome = document.querySelector(".welcome");
 const otazka2 = document.querySelector(".otazka2");
 const otazka3 = document.querySelector(".otazka3");
+const otazka4 = document.querySelector(".otazka4");
 const blur = document.querySelectorAll(".blur");
 
 starttlacitko.addEventListener("click", () => {
@@ -27,7 +28,15 @@ vote3.addEventListener("click", () => {
   blur.forEach(oneblur => {
     oneblur.classList.add("zapni")
   });
+
+  otazka4.classList.add("show");
+
 })
+
+
+
+
+
 
 /*
 Kdyz das odeslat a nebude tam nic, tak to da error box, ze mas checknout ty radia.
