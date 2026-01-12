@@ -22,7 +22,7 @@
   z-index: -1;
   transition: filter 0.8s ease;
 }
-.bg.blur {
+.bg.bgblur {
   filter: blur(8px) brightness(0.48);
 
 }
@@ -152,4 +152,10 @@ transform: translateY(80px);
 {
   transform: translateY(0);
   opacity: 1;
+}
+
+
+.blur.zapni {
+  filter: blur(2px) brightness(0.7);
+  transition: filter 0.35s ease;
 }
