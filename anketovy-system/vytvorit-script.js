@@ -1,24 +1,24 @@
 const questions = [];
 
-const previewContent = document.getElementById("previewContent");
+const nahledContent = document.getElementById("nahledContent");
 
 document.getElementById("addQuestion").addEventListener("click", () => {
   const text = document.getElementById("questionText").value;
   const type = document.getElementById("questionType").value;
-  const options = document.getElementById("options").value.split(",");
+  const moznosti = document.getElementById("moznosti").value.split(",");
 
-  questions.push({text, type, options});
+  questions.push({text, type, moznosti});
 });
 
 document.getElementById("updatePreview").addEventListener("click", () => {
-  previewContent.innerHTML = "";
+  nahledContent.innerHTML = "";
 
   questions.forEach(x => {
     const div = document.createElement("div");
     div.innerHTML = `<p><strong>${x.text}</strong></p>`;
-    previewContent.appendChild(div);
+    nahledContent.appendChild(div);
 
-    x.options.forEach(option => {
+    x.moznosti.forEach(option => {
     const opt = document.createElement("div");
      opt.textContent = "- " + option;
      div.appendChild(opt);
