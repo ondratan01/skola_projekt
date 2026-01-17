@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vytvořit anketu</title>
+    <link rel="stylesheet" href="vytvorit-style.css">
 </head>
 <body>
+    <div class="top-panel">
+        <button id="updatePreview" class="tlacidla">Aktualizovat náhled</button>
+        <button id="savePoll" class="tlacidla">Uložit anketu</button>
+    </div>
+
+  
+  <main class="editor">
+
     
+    <section class="controls">
+      <h2>Nastavení otázek</h2>
+
+      <label>
+        Text otázky
+        <input type="text" id="questionText">
+      </label>
+
+      <label>
+        Typ otázky
+        <select id="questionType">
+          <option value="radio">Výběr jedné možnosti</option>
+          <option value="checkbox">Více možností</option>
+          <option value="text">Textová odpověď</option>
+        </select>
+      </label>
+
+      <label>
+        Možnosti (oddělené čárkou)
+        <input type="text" id="options">
+      </label>
+
+      <button id="addQuestion">Přidat otázku</button>
+      <br><br><br>
+      <button id="removeLast">Odebrat poslední otázku</button>
+    </section>
+
+    
+    <section class="preview">
+      <h2>Náhled ankety</h2>
+      <div id="previewContent">
+        <p>Zatím žádné otázky</p>
+      </div>
+    </section>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+    <script src="vytvorit-script.js"></script>
 </body>
 </html>

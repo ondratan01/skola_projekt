@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #D0D9E2;
+}
+.tlacidla
+{
+    
+}
+
+.top-panel {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.9);
+  padding: 15px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+  
+}
+
+
+.editor {
+  display: flex;
+  height: 100vh;
+  padding-top: 80px; 
+}
+
+
+.controls {
+  width: 50%;
+  padding: 30px;
+  background: white;
+}
+
+.controls label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+
+.preview {
+  width: 50%;
+  padding: 30px;
+  background: #eaeaea;
+}
