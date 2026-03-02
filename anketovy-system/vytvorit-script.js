@@ -1,4 +1,4 @@
-const questions = [];
+export const questions = [];
 
 const nahledContent = document.getElementById("nahledContent");
 
@@ -29,3 +29,5 @@ document.getElementById("updatePreview").addEventListener("click", () => {
 document.getElementById("removeLast").addEventListener("click", () => {
   questions.pop();
 });
+
+
