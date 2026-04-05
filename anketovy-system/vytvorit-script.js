@@ -1,11 +1,13 @@
  const questions = [];
  let moznosti;
  let check;
+ let nazevA;
 const nahledContent = document.getElementById("nahledContent");
 
 document.getElementById("addQuestion").addEventListener("click", () => {
   const text = document.getElementById("questionText").value;
   const type = document.getElementById("questionType").value;
+  
 
   if(type == "text")
   {
@@ -83,7 +85,28 @@ document.getElementById("removeLast").addEventListener("click", () => {
 
 
 document.getElementById("savePoll").addEventListener("click", () => {
-  const data = JSON.stringify(questions,null,2);
+
+
+  try{
+    nazevA = document.getElementById("anketaName").value.trim();
+  }
+  catch(error)
+  {
+    console.log(error)
+    alert("Název ankety nemůže být !");
+      return;
+  }
+
+  if(nazevA) 
+  {
+
+const pollData={
+  nazev: nazevA,
+  otazky: questions
+}
+
+  
+  const data = JSON.stringify(pollData,null,2);
 
   const blob = new Blob([data], {type: "application/json"});
 
@@ -92,9 +115,13 @@ document.getElementById("savePoll").addEventListener("click", () => {
 
   a.download = "anketa.json";
 
-  a.click();
+  a.click();}
 
-
+    else
+    {
+      alert("Název ankety nemůže být prázdný!");
+      return;
+    }
 
 
 
