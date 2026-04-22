@@ -2,6 +2,7 @@
  let moznosti;
  let check;
  let nazevA;
+ //mozna dam php tho
 const nahledContent = document.getElementById("nahledContent");
 
 document.getElementById("addQuestion").addEventListener("click", () => {
