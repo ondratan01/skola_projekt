@@ -2,7 +2,8 @@
  let moznosti;
  let check;
  let nazevA;
- //mozna dam php tho
+ // mozna dam php tho
+ // inactive radio type shi jeste
 const nahledContent = document.getElementById("nahledContent");
 
 document.getElementById("addQuestion").addEventListener("click", () => {
