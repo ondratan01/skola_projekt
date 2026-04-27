@@ -60,22 +60,45 @@ document.getElementById("updatePreview").addEventListener("click", () => {
       div.appendChild(info);
     }
 
-    if(x.check == 0)
-    {
+    if (x.check == 0) {
       const info = document.createElement("div");
-      info.innerHTML = "(text odpověď) <br> <br>";
+      info.textContent = "(text odpověď)";
       div.appendChild(info);
+      const textarea = document.createElement("textarea");
+      textarea.disabled=true;
+      div.appendChild(textarea);
     }
 
 
     if(x.check != 0)
     {
       x.moznosti.forEach(option => {
-    const opt = document.createElement("div");
-     opt.textContent = "- " + option;
-     div.appendChild(opt);
+    // const opt = document.createElement("div");
+    //  opt.textContent = "- " + option;
+    //  div.appendChild(opt);
+
+    const label = document.createElement("label");
+    label.style.display = "block";
+    const input = document.createElement("input");
+
+    if (x.check == 2) {
+      input.type = "radio";
+      input.name = "q_" + questions.indexOf(x);
+    }
+    if (x.check == 1) {
+      input.type = "checkbox";
+    }
+    input.disabled = true;
+    
+    label.appendChild(input);
+    label.append(" " + option);
+
+    div.appendChild(label);
+
                                 });
     }
+
+    
     
 
                          });
