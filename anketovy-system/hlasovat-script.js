@@ -21,3 +21,8 @@ document.getElementById("importFile").addEventListener("change", (e) => {
 reader.readAsText(file);
 
 })
+
+document.getElementById("cau").addEventListener("click", async (x) => {
+    console.log(questions);
+
+})
