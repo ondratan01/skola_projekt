@@ -2,8 +2,6 @@
  let moznosti;
  let check;
  let nazevA;
- // mozna dam php tho
- // inactive radio type shi jeste
 const nahledContent = document.getElementById("nahledContent");
 
 document.getElementById("addQuestion").addEventListener("click", () => {
@@ -73,9 +71,6 @@ document.getElementById("updatePreview").addEventListener("click", () => {
     if(x.check != 0)
     {
       x.moznosti.forEach(option => {
-    // const opt = document.createElement("div");
-    //  opt.textContent = "- " + option;
-    //  div.appendChild(opt);
 
     const label = document.createElement("label");
     label.style.display = "block";
