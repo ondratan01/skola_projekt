@@ -133,7 +133,7 @@ const pollData={
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
 
-  a.download = "anketa.json";
+  a.download = nazevA+".json";
 
   a.click();}
 
