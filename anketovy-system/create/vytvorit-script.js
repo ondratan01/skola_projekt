@@ -104,7 +104,7 @@ document.getElementById("removeLast").addEventListener("click", () => {
 });
 
 
-document.getElementById("savePoll").addEventListener("click", () => {
+document.getElementById("exportPoll").addEventListener("click", () => {
 
 
   try{
