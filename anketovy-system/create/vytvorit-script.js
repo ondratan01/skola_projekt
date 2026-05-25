@@ -150,3 +150,39 @@ const pollData={
 
 })
 
+////////////////////////
+
+document.getElementById("savePoll")
+.addEventListener("click", async ()=>{
+
+const pollData = {
+
+nazev:
+document.getElementById("anketaName").value,
+
+otazky:
+questions
+
+};
+
+try{
+
+const res = await fetch("save-poll.php",{
+method:"POST",
+headers:{
+"Content-Type":
+"application/json"
+},
+body:
+JSON.stringify(
+pollData
+)});
+
+const data = await res.text();
+alert(data);
+}
+
+catch(error){
+console.log(error);
+}
+});
