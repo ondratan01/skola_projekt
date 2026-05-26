@@ -1,70 +1,33 @@
-document
-.getElementById("loginBtn")
-.addEventListener(
-"click",
-
-async()=>{
-
-const username=
-document
-.getElementById(
-"username"
-).value;
-
-const password=
-document
-.getElementById(
-"password"
-).value;
 
 
 
+document.getElementById("loginBtn").addEventListener("click",
+
+async()=>{const username=document.getElementById("username").value;
+
+
+const password=document.getElementById("password").value;
 try{
-
-const res=
-await fetch(
-"login.php",
-{
-
-method:"POST",
-
-headers:{
-"Content-Type":
-"application/json"
+    const res=await fetch(
+    "login.php",{method:"POST",headers:{
+    "Content-Type":
+    "application/json"
 },
+body: JSON.stringify({username,password})
+});
 
-body:
-JSON.stringify({
+const data=await res.text();
 
-username,
-password
-
-})
-
+if(data=="OK"){
+location.href="/skola_projekt/anketovy-system/create/vytvorit.html";
 }
 
-);
 
-const data=
-await res.text();
-
-if(data=="OK")
-{
-location.href=
-"vytvorit.html";
-}
-
-else
-{
+else{
 alert(data);
 }
-
 }
 
-catch(error)
-{
+catch(error){
 console.log(error);
-}
-
-}
-)
+}})

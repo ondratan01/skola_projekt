@@ -3,13 +3,13 @@ session_start();
 
 if(isset($_SESSION["user_id"])){
     header(
-    "Location: vytvorit.html"
+    "Location: /skola_projekt/anketovy-system/create/vytvorit.html"
     );
 }
 
 else{
     header(
-    "Location: login.html"
+    "Location: /skola_projekt/anketovy-system/registerLogin/login.html"
     );
 }
 exit();

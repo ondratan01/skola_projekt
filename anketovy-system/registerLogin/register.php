@@ -1,42 +1,18 @@
 <?php
 
-require "db.php";
+require __DIR__ . "/../create/db.php";
 
-$data=json_decode(
-file_get_contents(
-"php://input"
-),
-true
-);
+$data=json_decode(file_get_contents("php://input"),true);
 
-$username=
-$data["username"];
+$username=$data["username"];
 
-$password=
-password_hash(
-$data["password"],
-PASSWORD_DEFAULT
-);
+$password=password_hash($data["password"],PASSWORD_DEFAULT);
 
 
-$stmt=
-$db->prepare(
+$stmt=$db->prepare(
+"INSERT INTO users(username,password)VALUES(?,?)");
 
-"INSERT INTO users(
-username,
-password
-)
-
-VALUES(?,?)"
-
-);
-
-$stmt->execute([
-
-$username,
-$password
-
-]);
+$stmt->execute([$username,$password]);
 
 echo "Registrace hotová";
 
