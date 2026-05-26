@@ -12,10 +12,10 @@ catch(PDOException $e)
     die("Chyba DB: ".$e->getMessage());
 }
 
-$stmt = $db->query("SELECT * FROM users");
+// $stmt = $db->query("SELECT * FROM users");
 
-$data = $stmt->fetchAll();
+// $data = $stmt->fetchAll();
 
-print_r($data);
+// print_r($data);
 
 ?>
