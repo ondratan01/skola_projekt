@@ -1,28 +1,18 @@
-// import { questions } from "./vytvorit-script";
-const questions = [];
+document
+    .getElementById("loadBtn")
 
+    .addEventListener("click", async () => {
 
+        const code = document
+            .getElementById("pollCode")
+            .value;
 
-document.getElementById("importFile").addEventListener("change", (e) => {
-    const file = e.target.files[0];
+        const res = await fetch(
+            `load-poll.php?code=${code}`
+        );
 
-    if(!file) return;
-    const reader = new FileReader();
-    reader.onload = function(event){
-        const content = event.target.result;
-        const data = JSON.parse(content);
+        const data = await res.json();
+
         console.log(data);
 
-        questions.length = 0;
-        questions.push(...data.otazky);
-        const nazev = data.nazev;
-    }
-
-reader.readAsText(file);
-
-})
-
-document.getElementById("cau").addEventListener("click", async (x) => {
-    console.log(questions);
-
-})
+    });

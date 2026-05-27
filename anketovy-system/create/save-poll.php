@@ -19,20 +19,23 @@ try
     //////////////
 
 
+    $code = strtoupper(substr(md5(uniqid()),0,6));
+
+
+
     $stmt = $db->prepare(
     "INSERT INTO polls(
         user_id,
-        name
-    )
-
-    VALUES(?,?)"
+        name,
+        code)
+    VALUES(?,?,?)"
     );
 
     $stmt->execute([
 
         $_SESSION["user_id"],
         $nazev
-
+        $code
     ]);
 
     ///////////////

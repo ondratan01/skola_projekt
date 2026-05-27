@@ -6,7 +6,8 @@ body
 header
 {
   display: block;
-  background-color: #1E2019;
+  /* background-color: #1E2019; */
+  background-color: #2f3236;
   height: 25px;
 }
 
@@ -36,17 +37,18 @@ header
   height: 150px;
   padding: 20px;
   border-radius: 12px;
-  background: #1E2019;
+  background: rgb(242, 249, 255);
   /* color: goldenrod; */
   /* color: #D0D9E2; */
-  color: rgb(255, 255, 255);
+  color: #1E2019;
   font-size: larger;
   text-align: center;
   transition: transform 0.3s ease;
 }
 .card:hover
 {
-  background-color:#252720f5;
+  /* background-color:#252720f5; */
+  background: rgb(255, 255, 255);
   transform: scale(1.03);
 }
 .card p

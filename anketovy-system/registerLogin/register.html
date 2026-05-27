@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="register-style.css">
 </head>
 <body>
     <!DOCTYPE html>
@@ -16,24 +18,19 @@
 
 <body>
 
-<h1>Registrace</h1>
+<div class="register-container">
+  <h1>Registrace</h1>
 
-<input type="text" id="username" placeholder="Jméno">
+  <input type="text" id="username" placeholder="Jméno" />
 
-<br><br>
+  <input type="password" id="password" placeholder="Heslo" />
 
-<input type="password" id="password" placeholder="Heslo">
+  <button id="registerBtn">Registrovat</button>
 
-<br><br>
-
-<button id="registerBtn">Registrovat</button>
-
-<br><br>
-
-Máš účet?
-
-<a href="login.html">Přihlásit</a>
-
+  <div class="register-link">
+    Máš účet? <a href="login.html">Přihlásit</a>
+  </div>
+</div>
 <script src="register-script.js"></script>
 
 </body>

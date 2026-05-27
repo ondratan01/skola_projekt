@@ -4,28 +4,21 @@
     <meta charset="UTF-8">
     <meta name="Registrovat" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="login-style.css">
 </head>
 
 <body>
-<input type="text"
-id="username"
-placeholder="Jméno">
-
-<input type="password"
-id="password"
-placeholder="Heslo">
-
-<button id="loginBtn" type="button">
-Přihlásit
-</button>
-
-<br><br>
-
-Nemáš účet?
-
-<a href="register.html">
-Registrovat
-</a>
+<div class="form-container">
+    <h1>Přihlášení</h1>
+  <input type="text" id="username" placeholder="Jméno" />
+  <input type="password" id="password" placeholder="Heslo" />
+  <button id="loginBtn" type="button">Přihlásit</button>
+  <br><br>
+  <div class="register-link">
+    Nemáš účet? <a href="register.html">Registrovat</a>
+  </div>
+</div>
 
 <script src="login-script.js"></script>
 </body>
