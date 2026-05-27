@@ -8,11 +8,11 @@ document
             .value;
 
         const res = await fetch(
-            `load-poll.php?code=${code}`
+            `nacist-anketu.php?code=${code}`
         );
 
-        const data = await res.json();
+        // const data = await res.json();
 
-        console.log(data);
+        // console.log(data);
 
     });

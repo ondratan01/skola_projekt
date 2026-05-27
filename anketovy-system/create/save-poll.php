@@ -34,7 +34,7 @@ try
     $stmt->execute([
 
         $_SESSION["user_id"],
-        $nazev
+        $nazev,
         $code
     ]);
 
