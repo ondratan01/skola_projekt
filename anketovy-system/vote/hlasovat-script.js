@@ -26,7 +26,6 @@ document.getElementById("loadBtn").addEventListener("click", async () => {
 
 
 
-    // chyba
     if(data.error)
     {
         container.innerHTML =
@@ -37,14 +36,14 @@ document.getElementById("loadBtn").addEventListener("click", async () => {
 
 
 
-    // název ankety
+    // anketa NAME
     container.innerHTML += `
         <h2>${data.poll.name}</h2>
     `;
 
 
 
-    // render otázek
+    // render otazek
     data.questions.forEach(q => {
 
         let html = `
@@ -72,7 +71,7 @@ document.getElementById("loadBtn").addEventListener("click", async () => {
 
 
 
-        // RADIO + CHECKBOX
+        // RADIO A CHECKBOX
         q.options.forEach(o => {
 
             let inputType = "radio";
@@ -106,17 +105,17 @@ document.getElementById("loadBtn").addEventListener("click", async () => {
 
 
 
-    // BUTTON
-    container.innerHTML += `
-        <button id="voteBtn">
-            Hlasovat
-        </button>
-    `;
+    
+    // container.innerHTML += `
+    //     <button id="voteBtn">
+    //         Hlasovat
+    //     </button>
+    // `;
 
 
 
 
-    // HLASOVÁNÍ
+    // HLASOVANI
     document
         .getElementById("voteBtn")
         .addEventListener("click", async () => {

@@ -4,7 +4,7 @@ session_start();
 
 require "../create/db.php";
 
-// Načtení všech anket přihlášeného uživatele
+// nacteni vsech mych anket
 $stmt = $db->prepare("
     SELECT *
     FROM polls
@@ -56,7 +56,7 @@ $polls = $stmt->fetchAll();
                 <?= $poll["code"] ?>
             </p>
 
-            <a href="results.php?id=<?= $poll["id"] ?>">
+            <a href="../results/vysledky.php?id=<?= $poll["id"] ?>">
                 Výsledky
             </a>
 

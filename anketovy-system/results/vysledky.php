@@ -1,0 +1,85 @@
+<?php
+
+require "../create/db.php";
+
+$pollId = $_GET["id"];
+
+
+
+// nacteni ankety
+$stmt = $db->prepare("
+    SELECT *
+    FROM polls
+    WHERE id = ?
+");
+
+$stmt->execute([$pollId]);
+
+$poll = $stmt->fetch();
+
+
+
+// otazky
+$stmt = $db->prepare("
+    SELECT *
+    FROM questions
+    WHERE poll_id = ?
+");
+
+$stmt->execute([$pollId]);
+
+$questions = $stmt->fetchAll();
+
+?>
+
+<h1>
+    Výsledky:
+    <?= $poll["name"] ?>
+</h1>
+
+<hr>
+
+<?php foreach($questions as $q): ?>
+
+    <h3>
+        <?= $q["text"] ?>
+    </h3>
+
+    <?php
+
+    // odpovedi
+    $stmt = $db->prepare("
+        SELECT
+            answer,
+            COUNT(*) as total
+
+        FROM answers
+
+        WHERE question_id = ?
+
+        GROUP BY answer
+    ");
+
+    $stmt->execute([
+        $q["id"]
+    ]);
+
+    $results = $stmt->fetchAll();
+
+    ?>
+
+
+
+    <?php foreach($results as $r): ?>
+
+        <p>
+            <?= $r["answer"] ?>
+            —
+            <?= $r["total"] ?> hlasů
+        </p>
+
+    <?php endforeach; ?>
+
+    <hr>
+
+<?php endforeach; ?>

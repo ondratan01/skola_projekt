@@ -5,7 +5,7 @@ require "../create/db.php";
 $code = $_GET["code"];
 
 
-// načtení ankety
+// nacteni ankety
 $stmt = $db->prepare("
     SELECT *
     FROM polls
@@ -25,7 +25,7 @@ if(!$poll)
 }
 
 
-// načtení otázek
+// nacteni questions
 $stmt = $db->prepare("
     SELECT *
     FROM questions
@@ -39,7 +39,7 @@ $stmt->execute([
 $questions = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-// načtení možností ke každé otázce
+// nacteni optionů
 foreach($questions as &$q)
 {
     $stmt = $db->prepare("
@@ -57,7 +57,7 @@ foreach($questions as &$q)
 }
 
 
-// finální JSON
+
 echo json_encode([
     "poll" => $poll,
     "questions" => $questions
