@@ -76,6 +76,26 @@ body {
     transition: 0.2s;
 }
 
+.btn.menu
+{
+   
+
+   display: inline-block;
+
+    padding: 10px 18px;
+
+    border-radius: 12px;
+
+    background: gray; 
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
 
 
 .btn:hover {

@@ -56,6 +56,12 @@ $polls = $stmt->fetchAll();
     >
         Odhlásit se
     </a>
+    <a
+        class="btn menu"
+        href="../dashboard/index.html"
+    >
+        Menu
+    </a>
 
 </div>
 
