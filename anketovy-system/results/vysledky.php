@@ -80,7 +80,12 @@ $questions = $stmt->fetchAll();
 >
     Zpět
 </a>
-
+<a
+    class="btn"
+    href="../dashboard/index.html"
+>
+    Menu
+</a>
 
 
 <hr>
@@ -121,6 +126,7 @@ $questions = $stmt->fetchAll();
     <?php foreach($results as $r): ?>
 
         <p>
+            
             <?= $r["answer"] ?>
             —
             <?= $r["total"] ?> hlasů
@@ -128,7 +134,7 @@ $questions = $stmt->fetchAll();
 
     <?php endforeach; ?>
 
-    
+    </div>
 
 <?php endforeach; ?>
 
