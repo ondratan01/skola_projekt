@@ -28,18 +28,38 @@ $polls = $stmt->fetchAll();
     
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="profil-style.css">
 </head>
 
 <body>
 
-    <h1>
-        Profil: <?= $_SESSION["username"] ?>
-    </h1>
+    <div class="top-panel">
 
-    <a href="../create/vytvorit.html">
+
+
+    <strong>
+        <?= $_SESSION["username"] ?>
+    </strong>
+
+
+
+    <a
+        class="btn"
+        href="../create/vytvorit.html"
+    >
         Nová anketa
     </a>
+
+    <a
+        class="btn logout"
+        href="../registerLogin/logout.php"
+    >
+        Odhlásit se
+    </a>
+
+</div>
+
+<div class="content">
 
     <hr>
 
@@ -56,9 +76,21 @@ $polls = $stmt->fetchAll();
                 <?= $poll["code"] ?>
             </p>
 
-            <a href="../results/vysledky.php?id=<?= $poll["id"] ?>">
-                Výsledky
-            </a>
+            <a class="btn" href="../results/vysledky.php?id=<?= $poll["id"] ?>">
+    Výsledky
+</a>
+<a
+    class="btn"
+    href="../results/smazat-anketu.php?id=<?= $poll["id"] ?>"
+
+    onclick="
+        return confirm(
+            'Opravdu smazat anketu?'
+        );
+    "
+>
+    Smazat
+</a>
 
         </div>
 
@@ -66,10 +98,10 @@ $polls = $stmt->fetchAll();
 
     <?php endforeach; ?>
 
-    <a href="../registerLogin/logout.php">
+    <!-- <a href="../registerLogin/logout.php">
         Odhlásit se
-    </a>
-
+    </a> -->
+</div>
 </body>
 
 </html>

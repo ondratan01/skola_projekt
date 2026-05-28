@@ -32,16 +32,64 @@ $questions = $stmt->fetchAll();
 
 ?>
 
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Výsledky
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="vysledky-style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="content">
+
+
+
+
+
+
+
+
+
 <h1>
     Výsledky:
     <?= $poll["name"] ?>
 </h1>
 
+
+
+<a
+    class="btn"
+    href="../dashboard/profil.php"
+>
+    Zpět
+</a>
+
+
+
 <hr>
 
 <?php foreach($questions as $q): ?>
 
-    <h3>
+    <div class="question">
+
+<h3>
         <?= $q["text"] ?>
     </h3>
 
@@ -80,6 +128,11 @@ $questions = $stmt->fetchAll();
 
     <?php endforeach; ?>
 
-    <hr>
+    
 
 <?php endforeach; ?>
+
+</div>
+
+</body>
+</html>

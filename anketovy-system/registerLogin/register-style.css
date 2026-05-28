@@ -20,10 +20,6 @@ body {
   width: fit-content;
 }
 
-h1 {
-  margin-bottom: 15px;
-  font-size: 24px;
-}
 
 input {
   padding: 12px;
@@ -58,17 +54,3 @@ button:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.register-link {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.register-link a {
-  color: #007bff;
-  text-decoration: none;
-  transition: text-decoration 0.3s;
-}
-
-.register-link a:hover {
-  text-decoration: underline;
-}
