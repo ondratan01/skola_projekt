@@ -82,7 +82,7 @@ $questions = $stmt->fetchAll();
 </a>
 <a
     class="btn"
-    href="../dashboard/index.html"
+    href="../dashboard/index.php"
 >
     Menu
 </a>

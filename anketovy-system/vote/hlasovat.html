@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hlasovat</title>
+    <link rel="stylesheet" href="hlasovat-style.css">
 </head>
 <body>
+
+<a href="../dashboard/index.php" class="back-btn">
+    ← Menu
+</a>
+
+<div class="main">
 <h1>Hlasovat</h1>
-
-<input
-    id="pollCode"
-    placeholder="Kód ankety"
->
-
+<div class="top-panel">
+<input id="pollCode"
+    placeholder="Kód ankety">
 <button id="loadBtn">
     Načíst
 </button>
 <button id="voteBtn">
-        Hlasovat
-    </button>
-
-<div id="pollContent"></div>
+    Hlasovat
+</button>
+</div>
 <div id="pollContainer"></div>
+</div>
+
 <script defer src="hlasovat-script.js?v=1"></script>
 </body>
 

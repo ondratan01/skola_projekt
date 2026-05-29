@@ -16,7 +16,7 @@ body {
   background: rgba(255,255,255,0.9);
   padding: 15px 20px;
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
   display: flex;
   gap: 10px;
   z-index: 100;
@@ -29,7 +29,7 @@ body {
   left: 12px;
   background: rgba(255,255,255,0.9);
   padding: 15px 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   display: flex;
   gap: 10px;

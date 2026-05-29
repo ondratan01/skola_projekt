@@ -108,7 +108,7 @@ h3
 
     padding: 10px 16px;
 
-    border-radius: 14px;
+    border-radius: 10px;
 
     box-shadow:
         0 4px 10px rgba(0,0,0,0.12);
@@ -139,4 +139,18 @@ h3
 .logout:hover
 {
     background: #c9302c;
+}
+
+.welcome
+{
+    background: rgba(255,255,255,0.9);
+
+    padding: 10px 16px;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.12);
+
+    font-weight: bold;
 }

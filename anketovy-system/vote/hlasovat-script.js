@@ -47,9 +47,9 @@ document.getElementById("loadBtn").addEventListener("click", async () => {
     data.questions.forEach(q => {
 
         let html = `
-            <div>
-                <h3>${q.text}</h3>
-        `;
+    <div class="question">
+        <h3>${q.text}</h3>
+`;
 
 
 

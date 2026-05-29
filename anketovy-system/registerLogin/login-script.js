@@ -19,7 +19,7 @@ body: JSON.stringify({username,password})
 const data=await res.text();
 
 if(data=="OK"){
-location.href="/skola_projekt/anketovy-system/create/vytvorit.html";
+location.href="/skola_projekt/anketovy-system/dashboard/index.php";
 }
 
 

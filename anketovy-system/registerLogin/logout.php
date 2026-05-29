@@ -2,7 +2,7 @@
 session_start();
 $_SESSION = [];
 session_destroy();
-header("Location: ../dashboard/index.html");
+header("Location: ../dashboard/index.php");
 exit();
 ?>
 

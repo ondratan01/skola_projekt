@@ -69,7 +69,7 @@ $polls = $stmt->fetchAll();
     </a>
     <a
         class="btn menu"
-        href="../dashboard/index.html"
+        href="../dashboard/index.php"
     >
         Menu
     </a>

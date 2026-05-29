@@ -1,0 +1,184 @@
+body
+{
+    margin: 0;
+
+    font-family: sans-serif;
+
+    background: #D0D9E2;
+}
+
+
+
+.main
+{
+    width: 90%;
+    max-width: 900px;
+
+    margin: auto;
+
+    padding-top: 40px;
+}
+
+
+
+h1
+{
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+
+.top-panel
+{
+    background: #f5f5f5;
+
+    padding: 15px;
+
+    border-radius: 6px;
+
+    border: 1px solid #cfcfcf;
+
+    box-shadow:
+        0 2px 6px rgba(0,0,0,0.08);
+
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+
+input
+{
+    padding: 10px;
+
+    border-radius: 4px;
+
+    border: 1px solid #aaa;
+
+    font-size: 15px;
+
+    flex: 1;
+
+    background: white;
+}
+
+
+
+button
+{
+    padding: 10px 16px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 4px;
+
+    background: white;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 1px 4px rgba(0,0,0,0.08);
+
+    transition: 0.15s;
+}
+
+
+
+button:hover
+{
+    background: #ececec;
+}
+
+
+
+.question
+{
+    background: white;
+
+    padding: 18px;
+
+    margin-bottom: 18px;
+
+    border-radius: 6px;
+
+    border: 1px solid #d4d4d4;
+
+    box-shadow:
+        0 2px 6px rgba(0,0,0,0.08);
+}
+
+
+
+.question h3
+{
+    margin-top: 0;
+}
+
+
+
+label
+{
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+
+
+textarea
+{
+    width: 100%;
+
+    min-height: 100px;
+
+    border-radius: 4px;
+
+    border: 1px solid #aaa;
+
+    padding: 10px;
+
+    resize: vertical;
+
+    box-sizing: border-box;
+}
+
+
+
+.back-btn
+{
+    position: fixed;
+
+    top: 12px;
+    left: 12px;
+
+    text-decoration: none;
+
+    background: white;
+
+    color: black;
+
+    padding: 8px 14px;
+
+    border-radius: 4px;
+
+    border: 1px solid #aaa;
+
+    box-shadow:
+        0 2px 6px rgba(0,0,0,0.08);
+
+    transition: 0.15s;
+}
+
+
+
+.back-btn:hover
+{
+    background: #ececec;
+}
