@@ -64,6 +64,7 @@ $polls = $stmt->fetchAll();
     <a
         class="btn logout"
         href="../registerLogin/logout.php"
+        onclick="return confirm('Opravdu se chcete odhlásit?')"
     >
         Odhlásit se
     </a>

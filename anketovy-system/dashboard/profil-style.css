@@ -16,7 +16,7 @@ body {
 
     padding: 12px 18px;
 
-    border-radius: 6px;
+    border-radius: 10px;
 
     border: 1px solid #cfcfcf;
 
@@ -25,7 +25,7 @@ body {
 
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
 
     z-index: 100;
 }
@@ -50,7 +50,7 @@ body {
 
     padding: 18px;
 
-    border-radius: 6px;
+    border-radius: 10px;
 
     border: 1px solid #d4d4d4;
 
@@ -71,14 +71,14 @@ body {
 
     padding: 9px 14px;
 
-    border-radius: 4px;
+    border-radius: 12px;
 
     background: #586da0;
 
     border: 1px solid #4d5f8b;
 
-    box-shadow:
-        0 1px 4px rgba(0,0,0,0.08);
+    /* box-shadow:
+        0 1px 4px rgba(0,0,0,0.8); */
 
     color: white;
 
