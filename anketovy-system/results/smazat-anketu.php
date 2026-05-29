@@ -2,6 +2,14 @@
 
 session_start();
 
+if(!isset($_SESSION["user_id"]))
+{
+    exit("Nejste přihlášen.");
+}
+
+
+
+
 require "../create/db.php";
 
 $id = $_GET["id"];

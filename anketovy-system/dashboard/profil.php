@@ -2,6 +2,17 @@
 
 session_start();
 
+if(!isset($_SESSION["user_id"]))
+{
+    header(
+        "Location: ../registerLogin/login.html"
+    );
+
+    exit;
+}
+
+
+
 require "../create/db.php";
 
 // nacteni vsech mych anket
